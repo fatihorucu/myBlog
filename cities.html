@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <?php  session_start();  ?>
+  <meta charset="utf-8">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="css/cities_css.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&family=Rubik:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a class="logo" href="index.html"><img src="images/globe.png" alt="Globe"></a>
+    <ul>
+      <li><a href="cities.html">Cities</a></li>
+      <li>✈️</li>
+      <li><a href="who_am_i.html">Who Am I</a></li>
+      <li>✈️</li>
+      <li><a href="contact_me.html">Contact Me</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+    <div class="cities">
+      <h2>Cities I've Visited</h2>
+      <div class="entry">
+        <figure>
+          <a href="entry.html"><img src="images/italy.jpg" alt="City Picture"></a>
+          <figcaption><a href="entry.html">City Caption</a></figcaption>
+        </figure>
+      </div>
+      <div class="entry">
+      </div>
+    </div>
+    <div class="most_liked">
+      <h4 class="h2v2">Most Popular Entry</h4>
+      <div class="popular_entry">
+        <figure>
+          <a href="entry.html"><img src="images/italy.jpg" alt="City Picture"></a>
+          <figcaption><a href="entry.html">City Caption</a></figcaption>
+        </figure>
+        <form class="subscribe" action="subscribe.php" method="post">
+          <fieldset>
+            <label for="fname">Name</label><br>
+            <input class="form_text"type="text" id="fname" name="fname"><br>
+            <label for="lname">E-mail</label><br>
+            <input class="form_text" type="email" id="email" name="email"><br><br>
+            <input id= "submit"type="submit" value="Subscribe">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
